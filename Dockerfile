@@ -1,18 +1,12 @@
-# Base image ufficiale n8n
-FROM n8nio/n8n:latest
-
-# Variabili di ambiente
-ENV N8N_BASIC_AUTH_ACTIVE=true
-ENV N8N_BASIC_AUTH_USER=admin
-ENV N8N_BASIC_AUTH_PASSWORD=admin
-ENV N8N_SECURE_COOKIE=false
-ENV GENERIC_TIMEZONE=Europe/Rome
-ENV DB_SQLITE_POOL_SIZE=1
-ENV N8N_RUNNERS_ENABLED=true
-ENV N8N_BLOCK_ENV_ACCESS_IN_NODE=false
-ENV N8N_GIT_NODE_DISABLE_BARE_REPOS=true
-ENV N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
-ENV N8N_HOST=0.0.0.0
-ENV N8N_PORT=5678
-ENV N8N_PROTOCOL=http
-
+| Name                                  | Value       |
+| ------------------------------------- | ----------- |
+| N8N_BASIC_AUTH_ACTIVE                 | true        |
+| N8N_BASIC_AUTH_USER                   | Hack        |
+| N8N_BASIC_AUTH_PASSWORD               | admin       |
+| N8N_SECURE_COOKIE                     | false       |
+| GENERIC_TIMEZONE                      | Europe/Rome |
+| DB_SQLITE_POOL_SIZE                   | 1           |
+| N8N_RUNNERS_ENABLED                   | true        |
+| N8N_BLOCK_ENV_ACCESS_IN_NODE          | false       |
+| N8N_GIT_NODE_DISABLE_BARE_REPOS       | true        |
+| N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS | true        |
